@@ -1,4 +1,4 @@
-# The Cost of a Late Box · Olist deep dive
+# The Cost of a Late Box · Olist Deep Dive
 
 Python companion to the Power BI report *Olist e-commerce* (Brazil, Jan 2017 – Aug 2018).
 The dashboard shows that late orders score 2.3★ against 4.3★ and that only 3% of customers order twice. This notebook explains why.
@@ -12,13 +12,13 @@ The dashboard shows that late orders score 2.3★ against 4.3★ and that only 3
 | Who is worth winning back? | Recency × Monetary segmentation (Frequency is 1 for 97% of customers) |
 | What would fixing lateness be worth? | Counterfactual re-scoring with the controlled effects |
 
-## Headline results
+## Headline Results
 * Lateness is a cliff: early delivery adds nothing, while 4–7 days late costs about 1.9★ even with controls.
 * 66% of negative reviews are fulfilment complaints. 27% were written before the parcel arrived, and partial deliveries come mostly from multi-item orders.
 * A late first order does not significantly reduce repeat buying (odds ratio 0.90, p = 0.46). Retention is structurally low.
 * Fixing lateness would remove about 3,400 of 12,228 1–2★ reviews. The hot spots are Feb–Mar 2018, Black Friday and the North-East states.
 
-## Run it
+## Run It
 ```bash
 pip install -r requirements.txt
 jupyter notebook "Olist Deep Dive.ipynb"
