@@ -1,6 +1,6 @@
-# The Cost of a Late Box · Olist end to end
+# The Cost of a Late Box · Olist End to End
 
-**Power BI · SQL (PostgreSQL / DuckDB) · Python · Machine learning · Streamlit**
+**Power BI · SQL (PostgreSQL / DuckDB) · Python · Machine Learning · Streamlit**
 
 One question, followed through every layer of a data stack: **what does late delivery cost a Brazilian marketplace, and can it be prevented?**
 Built on the public [Olist e-commerce dataset](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce) (96,203 delivered orders, Jan 2017 – Aug 2018).
@@ -17,7 +17,7 @@ Built on the public [Olist e-commerce dataset](https://www.kaggle.com/datasets/o
 | **Risk model** | [Olist Late Delivery Model](Olist%20Late%20Delivery%20Model.ipynb) | Which orders will arrive late, predicted at checkout, explained with SHAP |
 | **App** | `app/` · [live](https://olist-delivery-risk.streamlit.app) | Explore the data, score a new order, review a seller |
 
-## Headline results
+## Headline Results
 * **Late orders are 6.8% of deliveries but 32.6% of all 1–2★ reviews.** 61% of late orders end in a low review, against 9% of on-time orders. Being 4–7 days late costs about 1.9★ even with controls.
 * **The North-East is twice as late as the South-East** (12.8% vs 6.1%), and SP → RJ is the route with the most late parcels.
 * **30 sellers ship 4% of orders but cause 10% of late deliveries.** They form a concrete watch list.
