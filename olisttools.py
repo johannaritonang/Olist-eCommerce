@@ -33,16 +33,18 @@ FILES = {"orders": "olistordersdataset", "customers": "olistcustomersdataset", "
 
 
 def _key(name):
-    return re.sub(r"[^a-z0-9]", "", name.lower())
+    name = re.sub(r"\.csv(\.gz)?$", "", name.lower())
+    return re.sub(r"[^a-z0-9]", "", name)
 
 
 def find_files(folder):
-    """Map each dataset to its CSV inside `folder` (or None)."""
+    """Map each dataset to its file inside `folder` (or None). Accepts .csv and gzipped .csv.gz."""
     folder = Path(folder)
     found = {}
-    csvs = list(folder.glob("*.csv")) if folder.exists() else []
+    files = [f for f in folder.iterdir() if f.name.lower().endswith((".csv", ".csv.gz"))] if folder.exists() else []
     for k, stem in FILES.items():
-        found[k] = next((f for f in csvs if _key(f.stem) == stem), None)
+        hits = sorted((f for f in files if _key(f.name) == stem), key=lambda f: f.name.endswith(".gz"))
+        found[k] = hits[0] if hits else None
     return found
 
 
