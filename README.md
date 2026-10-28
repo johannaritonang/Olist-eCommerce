@@ -39,7 +39,7 @@ Seven plain `.sql` files that run unchanged on **PostgreSQL** and **DuckDB**:
 
 ![Seller scorecard](images/sql%20seller%20scorecard.png)
 
-## Run it
+## Run It
 ```bash
 pip install -r requirements.txt
 jupyter notebook "Olist SQL Analysis.ipynb"        # builds the database (DuckDB by default) and runs every .sql file
