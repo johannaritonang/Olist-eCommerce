@@ -11,7 +11,7 @@ Built on the public [Olist e-commerce dataset](https://www.kaggle.com/datasets/o
 
 | Layer | File | What it answers |
 |---|---|---|
-| **Dashboard** | `Power BI/` | Sales, delivery and review KPIs for the business |
+| **Dashboard** | `Power BI/`[Olist Ecommerce](https://app.powerbi.com/view?r=eyJrIjoiOWMzYjAwYWYtNjY3YS00OGYyLTgyMDgtOTNkMzFjZDU3NWJhIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9) | Sales, delivery and review KPIs for the business |
 | **SQL** | [Olist SQL Analysis](Olist%20SQL%20Analysis.ipynb) | Clean tables, cohorts, RFM, late-delivery funnel, seller watch list |
 | **Python deep dive** | [Olist Deep Dive](Olist%20Deep%20Dive.ipynb) | How much a late box costs in stars, what customers complain about, whether they come back |
 | **Risk model** | [Olist Late Delivery Model](Olist%20Late%20Delivery%20Model.ipynb) | Which orders will arrive late, predicted at checkout, explained with SHAP |
